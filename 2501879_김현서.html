@@ -1,10 +1,11 @@
 
-<!--// 5-p26 스타일 조작(그라데이션션)
+<!--
 <!DOCTYPE html>
 <html>
 <head>
     <title>Document Object Model</title>
     <script>
+        // 5-p26 스타일 조작(그라데이션)
         // 이벤트를 연결합니다.
         window.onload = function () {
             // 문서 객체를 추가합니다.
@@ -34,12 +35,13 @@
 </html>
 -->
 
-<!--// 5-p31 문서 객체 속성 조작(표준시)
+<!--
 <!DOCTYPE html>
 <html>
 <head>
     <title>Document Object Model</title>
     <script>
+        // 5-p31 문서 객체 속성 조작(표준시)
         // 이벤트를 연결합니다.
         window.onload = function () {
             // 문서 객체를 선택합니다.
@@ -58,13 +60,14 @@
 </html>
 -->
 
-<!--// 6-p12 문서 객체 선택(스타일 속성성)
+<!--
 <!DOCTYPE html>
 <html>
 <head>
     <title>Document Object Model</title>
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
     <script>
+         // 6-p12 문서 객체 선택(스타일 속성)
          // 이벤트를 연결합니다.
          $(document).ready(function () {
              // 스타일 속성을 변경합니다.
@@ -81,25 +84,27 @@
 </html>
 -->
 
-// 6-p22 스스타일 조작
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Document Object Model</title>
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script> 
     <script> 
-         $(document).ready(function () { 
+        $(document).ready(function () { 
+           // 6-p22 문서 객체 스타일 조작(속성 값 입력, 속성 지정)
            // 스타일을 적용합니다. 
-           $('.box').css('float', 'left'); 
-           $('.box').css('margin', 10); 
-           $('.box').css('width', 100); 
-           $('.box').css('height', 100); 
-           $('.box').css('backgroundColor', 'red'); 
-         }); 
-     </script> 
-<body> 
-     <div class="box"></div> 
-     <div class="box"></div> 
-     ㄴ<div class="box"></div>
-</body>
+           $('.box').css({
+               'float': 'left',
+               'margin': 10,
+               'width': 100,
+               'height': 100,
+               'backgroundColor': 'red'
+           }); 
+        }); 
+    </script> 
+</head> <body> 
+    <div class="box"></div> 
+    <div class="box"></div> 
+    <div class="box"></div> </body>
 </html>
